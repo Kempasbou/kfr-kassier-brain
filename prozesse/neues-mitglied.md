@@ -6,4 +6,5 @@
    – Nr. (höchste + 1), Vorname, Nachname, Mitglied seit (= Datum der Unterschrift), Beitrag.
    Speichern unter aktuellem Datum.
 4. Lastschriftvorlage für die Bank ausfüllen (siehe `vorlagen/lastschriftvorlagen.md`).
-5. Eintrag in `protokoll/neuaufnahmen.md`.
+5. Beitragspflicht im Eintrittsjahr prüfen (siehe `regeln/beitragsregeln.md`) und Daniel darauf hinweisen.
+6. Eintrag in `protokoll/neuaufnahmen.md`.

@@ -3,6 +3,7 @@
 Second Brain für Daniels Arbeit als Kassier der Kulturfreunde Rieden e.V.
 
 ## Struktur
+- `regeln/` – Vereinsregeln (z. B. Beitragsfälligkeit)
 - `prozesse/` – feste Abläufe (z. B. Neuaufnahme von Mitgliedern)
 - `skills/` – Claude-Skills für wiederkehrende Aufgaben
 - `vorlagen/` – Konstanten und Spaltenbelegungen der Bank-Importdateien

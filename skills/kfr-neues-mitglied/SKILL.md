@@ -43,9 +43,15 @@ Foto an **kulturfreunderieden@gmail.com** senden (Betreff z. B. „Beitrittserkl
 
 Dateiname: `Lastschriftvorlagen_JJJJ-MM-TT.csv`.
 
-## 5. Ablage
+## 5. Beitragspflicht im Eintrittsjahr prüfen
+Maßgeblich ist das Datum der Unterschrift (Regel in `regeln/beitragsregeln.md`):
+- Unterschrift **bis 30.09.**: voller Jahresbeitrag für das laufende Jahr fällig. Liegt die März-Abbuchung schon zurück, Daniel ausdrücklich darauf hinweisen, dass der Beitrag fürs laufende Jahr noch eingezogen werden muss.
+- Unterschrift **ab 01.10.**: im Eintrittsjahr beitragsfrei, erste Abbuchung im März des Folgejahres.
+Das Ergebnis immer in der Abschlussmeldung nennen.
+
+## 6. Ablage
 - Beide Dateien an Daniel senden; ist sein Computer verbunden, zusätzlich in seinen Download-Ordner schreiben.
 - Im Repo `Kempasbou/kfr-kassier-brain` eine Zeile in `protokoll/neuaufnahmen.md` ergänzen (Nr., Name, Mitglied seit, Beitrag, Erfassungsdatum), committen und pushen. **Keine** IBAN, Adresse, Telefon, E-Mail, Geburtsdaten oder Fotos ins Repo.
 
-## 6. Abschluss
-Kurz auf Deutsch melden: Mitgliedsnummer, ermittelte Bank/BIC, was noch offen ist (z. B. Mail).
+## 7. Abschluss
+Kurz auf Deutsch melden: Mitgliedsnummer, ermittelte Bank/BIC, ob im Eintrittsjahr noch ein Beitrag fällig ist, was noch offen ist (z. B. Mail).
