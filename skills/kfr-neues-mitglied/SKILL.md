@@ -13,13 +13,10 @@ Aus dem Foto übernehmen: Vorname, Nachname, Geburtsname, Straße, PLZ/Ort, Tele
 - Unleserliche Felder kurz nachfragen, nicht raten.
 
 ## 2. Antrag umbenennen und bereitstellen
-Foto bzw. PDF kopieren und umbenennen nach `Nachname_Vorname_KFR_Beitrittserklärung_JJJJMMTT` + Originalendung (JJJJMMTT = Eintrittsdatum = Datum der Unterschrift), z. B. `Capone_Ursula_KFR_Beitrittserklärung_20261021.jpg`. Die umbenannte Datei Daniel zusammen mit Excel und CSV bereitstellen und als Anhang für die Mail verwenden.
+Foto bzw. PDF kopieren und umbenennen nach `Nachname_Vorname_KFR_Beitrittserklärung_JJJJMMTT` + Originalendung (JJJJMMTT = Eintrittsdatum = Datum der Unterschrift), z. B. `Capone_Ursula_KFR_Beitrittserklärung_20261021.jpg`. Die umbenannte Datei Daniel zusammen mit Excel und CSV bereitstellen.
 
-## 3. Mail
-Foto über den Gmail-Connector **sofort und ohne Rückfrage oder Entwurf** an **kulturfreunderieden@gmail.com** senden (Betreff „Beitrittserklärung Vorname Nachname“).
-- Schnellster Weg: Liegt das Foto schon in Daniels Gmail (z. B. an sich selbst geschickt), die Mail suchen und mit `forward` weiterleiten – kein Neukodieren nötig.
-- Sonst das Foto vorher klein machen (Graustufen, Licht ausgleichen, schwarz-weiß, ca. 1000 px breit, PNG ≈ 20 KB) und als Base64-Anhang mit `send_message` schicken. Das Original (≈ 130 KB) nicht direkt anhängen, das dauert zu lange.
-- Ist Gmail nicht verbunden: Daniel Bescheid geben, dass er die Mail selbst schickt.
+## 3. Mail – nur erinnern
+Die Mail **nicht** selbst verschicken. Daniel schickt den umbenannten Antrag selbst an **kulturfreunderieden@gmail.com**. In der Abschlussmeldung kurz daran erinnern.
 
 ## 4. Mitglieder-Excel
 - Blatt „Aktuelle Mitglieder“, Spalten: Nr. | Vorname | Nachname | Mitglied seit | Beitrag.
@@ -60,4 +57,4 @@ Das Ergebnis immer in der Abschlussmeldung nennen.
 - Im Repo `Kempasbou/kfr-kassier-brain` eine Zeile in `protokoll/neuaufnahmen.md` ergänzen (Nr., Name, Mitglied seit, Beitrag, Erfassungsdatum), committen und pushen. **Keine** IBAN, Adresse, Telefon, E-Mail, Geburtsdaten oder Fotos ins Repo.
 
 ## 8. Abschluss
-Kurz auf Deutsch melden: Mitgliedsnummer, ermittelte Bank/BIC, ob im Eintrittsjahr noch ein Beitrag fällig ist, was noch offen ist (z. B. Mail).
+Kurz auf Deutsch melden: Mitgliedsnummer, ermittelte Bank/BIC, ob im Eintrittsjahr noch ein Beitrag fällig ist, Erinnerung: umbenannten Antrag an kulturfreunderieden@gmail.com schicken.
