@@ -12,19 +12,22 @@ Aus dem Foto übernehmen: Vorname, Nachname, Geburtsname, Straße, PLZ/Ort, Tele
 - IBAN ohne Leerzeichen, Prüfsumme (mod 97 = 1) per Code prüfen. Schlägt sie fehl: unsichere Ziffern nennen und nachfragen.
 - Unleserliche Felder kurz nachfragen, nicht raten.
 
-## 2. Mail
+## 2. Antrag umbenennen und bereitstellen
+Foto bzw. PDF kopieren und umbenennen nach `Nachname_Vorname_KFR_Beitrittserklärung_JJJJMMTT` + Originalendung (JJJJMMTT = Eintrittsdatum = Datum der Unterschrift), z. B. `Capone_Ursula_KFR_Beitrittserklärung_20261021.jpg`. Die umbenannte Datei Daniel zusammen mit Excel und CSV bereitstellen und als Anhang für die Mail verwenden.
+
+## 3. Mail
 Foto über den Gmail-Connector **sofort und ohne Rückfrage oder Entwurf** an **kulturfreunderieden@gmail.com** senden (Betreff „Beitrittserklärung Vorname Nachname“).
 - Schnellster Weg: Liegt das Foto schon in Daniels Gmail (z. B. an sich selbst geschickt), die Mail suchen und mit `forward` weiterleiten – kein Neukodieren nötig.
 - Sonst das Foto vorher klein machen (Graustufen, Licht ausgleichen, schwarz-weiß, ca. 1000 px breit, PNG ≈ 20 KB) und als Base64-Anhang mit `send_message` schicken. Das Original (≈ 130 KB) nicht direkt anhängen, das dauert zu lange.
 - Ist Gmail nicht verbunden: Daniel Bescheid geben, dass er die Mail selbst schickt.
 
-## 3. Mitglieder-Excel
+## 4. Mitglieder-Excel
 - Blatt „Aktuelle Mitglieder“, Spalten: Nr. | Vorname | Nachname | Mitglied seit | Beitrag.
 - Genau eine Zeile anhängen: Nr. = höchste vorhandene Nr. + 1; Mitglied seit = Datum der Unterschrift (als echtes Datum); Beitrag als Zahl.
 - Formatierung (Schrift, Zahlenformate) der Zeile darüber übernehmen (openpyxl).
 - Speichern als `Aktuelle_Mitglieder_JJJJMMTT.xlsx` mit heutigem Datum.
 
-## 4. Lastschriftvorlage (CSV für die Bank)
+## 5. Lastschriftvorlage (CSV für die Bank)
 `;`-getrennt, UTF-8 mit BOM, CRLF, Kopfzeile unverändert. Die Vorlagezeile mit den festen Werten durch die Zeile des neuen Mitglieds ersetzen:
 
 | Spalte | Inhalt |
@@ -46,15 +49,15 @@ Foto über den Gmail-Connector **sofort und ohne Rückfrage oder Entwurf** an **
 
 Dateiname: `Lastschriftvorlagen_JJJJ-MM-TT.csv`.
 
-## 5. Beitragspflicht im Eintrittsjahr prüfen
+## 6. Beitragspflicht im Eintrittsjahr prüfen
 Maßgeblich ist das Datum der Unterschrift (Regel in `regeln/beitragsregeln.md`):
 - Unterschrift **bis 30.09.**: voller Jahresbeitrag für das laufende Jahr fällig. Liegt die März-Abbuchung schon zurück, Daniel ausdrücklich darauf hinweisen, dass der Beitrag fürs laufende Jahr noch eingezogen werden muss.
 - Unterschrift **ab 01.10.**: im Eintrittsjahr beitragsfrei, erste Abbuchung im März des Folgejahres.
 Das Ergebnis immer in der Abschlussmeldung nennen.
 
-## 6. Ablage
-- Beide Dateien an Daniel senden; ist sein Computer verbunden, zusätzlich in seinen Download-Ordner schreiben.
+## 7. Ablage
+- Umbenannten Antrag, Excel und CSV an Daniel senden; ist sein Computer verbunden, zusätzlich in seinen Download-Ordner schreiben.
 - Im Repo `Kempasbou/kfr-kassier-brain` eine Zeile in `protokoll/neuaufnahmen.md` ergänzen (Nr., Name, Mitglied seit, Beitrag, Erfassungsdatum), committen und pushen. **Keine** IBAN, Adresse, Telefon, E-Mail, Geburtsdaten oder Fotos ins Repo.
 
-## 7. Abschluss
+## 8. Abschluss
 Kurz auf Deutsch melden: Mitgliedsnummer, ermittelte Bank/BIC, ob im Eintrittsjahr noch ein Beitrag fällig ist, was noch offen ist (z. B. Mail).
