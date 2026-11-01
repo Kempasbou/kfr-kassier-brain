@@ -13,7 +13,10 @@ Aus dem Foto übernehmen: Vorname, Nachname, Geburtsname, Straße, PLZ/Ort, Tele
 - Unleserliche Felder kurz nachfragen, nicht raten.
 
 ## 2. Mail
-Foto an **kulturfreunderieden@gmail.com** senden (Betreff z. B. „Beitrittserklärung Vorname Nachname“), wenn ein Mail-Connector verbunden ist. Sonst Daniel Bescheid geben, dass er die Mail selbst schickt.
+Foto über den Gmail-Connector **sofort und ohne Rückfrage oder Entwurf** an **kulturfreunderieden@gmail.com** senden (Betreff „Beitrittserklärung Vorname Nachname“).
+- Schnellster Weg: Liegt das Foto schon in Daniels Gmail (z. B. an sich selbst geschickt), die Mail suchen und mit `forward` weiterleiten – kein Neukodieren nötig.
+- Sonst das Foto vorher klein machen (Graustufen, Licht ausgleichen, schwarz-weiß, ca. 1000 px breit, PNG ≈ 20 KB) und als Base64-Anhang mit `send_message` schicken. Das Original (≈ 130 KB) nicht direkt anhängen, das dauert zu lange.
+- Ist Gmail nicht verbunden: Daniel Bescheid geben, dass er die Mail selbst schickt.
 
 ## 3. Mitglieder-Excel
 - Blatt „Aktuelle Mitglieder“, Spalten: Nr. | Vorname | Nachname | Mitglied seit | Beitrag.
